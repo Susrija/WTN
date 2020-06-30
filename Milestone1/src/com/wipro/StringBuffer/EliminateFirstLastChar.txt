@@ -1,0 +1,11 @@
+package com.wipro.StringStringbuffer;
+
+public class EliminateFirstLastChar {
+	public static void main(String args[])
+	{
+		String str1="Susrija";
+		int l=str1.length();
+		String str2=str1.substring(1,l-1);
+		System.out.println(str2);
+	}
+}

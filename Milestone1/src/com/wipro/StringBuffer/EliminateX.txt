@@ -1,0 +1,17 @@
+package com.wipro.StringStringbuffer;
+
+public class EliminateX {
+	public static void main(String args[])
+	{
+		String str="xsusrix";
+		int l=str.length();
+		if(str.charAt(0)=='x' && str.charAt(l-1)=='x')
+		{
+			System.out.println(str.substring(1,l-1));
+		}
+		else
+		{
+			System.out.println(str);
+		}
+	}
+}

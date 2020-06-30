@@ -1,0 +1,10 @@
+package com.wipro.StringStringbuffer;
+
+public class Ncopies {
+	public static void main(String args[])
+	{
+		String str="Susrija";
+		String s=str.substring(0,2);
+		System.out.println(s+s+s);
+	}
+}

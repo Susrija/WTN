@@ -1,0 +1,21 @@
+package com.wipro.StringStringbuffer;
+
+public class EliminateStar {
+	public static void main(String args[])
+	{
+		String str="ab*cd";
+		int l=str.length();
+		int k = 0;
+		for(int i=0;i<l;i++)
+		{
+			if(str.charAt(i)=='*')
+			{
+				k=i;
+				break;
+			}
+		}
+		String s1=str.substring(0,k-1);
+		String s2=str.substring(k+2,l);
+		System.out.println(s1+s2);
+	}
+}
