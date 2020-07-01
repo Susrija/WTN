@@ -1,0 +1,9 @@
+import java.io.*;
+import java.util.*;
+class UsrMainCode
+{
+	public int addLastDigits(int input1, int input2)
+	{
+		return Math.pow(input1%10)+Math.pow(input2%10);
+	}
+}		
