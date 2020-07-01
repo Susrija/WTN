@@ -1,0 +1,16 @@
+public String secondWordUpperCase(String input1)
+{
+		String str[]=input1.split(" ");
+		int l=str.length;
+		String s1;
+		if(l==1)
+		{
+			return "LESS";
+		}
+		else
+		{
+			s1=str[1];
+			s1=s1.toUpperCase();
+		}
+		return s1;
+}
