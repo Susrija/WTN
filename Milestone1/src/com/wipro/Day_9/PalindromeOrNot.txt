@@ -1,0 +1,21 @@
+class UserMainCode
+{
+	public int isPalindrome(int input1)
+	{
+		int r=0;
+		int n=input1;
+		while(input1>0)
+		{
+			r=r*10+input1%10;
+			input1=input1/10;
+		}
+		if(r!=n)
+		{
+			return 1;
+		}
+		else
+		{
+			return 2;
+		}
+	}
+}	

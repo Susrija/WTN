@@ -1,0 +1,23 @@
+int isPalindromePossible(int input1)
+{
+	int a[26]={0};
+	int i;
+	while(input1>0)
+	{
+		a[input1%10]++;
+		input1/=10;
+	}
+	int odd=0;
+	for(i=0;i<10;i++)
+	{
+		if(a[i]&1)
+		{
+			odd++;
+		}	
+		if(odd>1)
+		{
+			return 1;
+		}
+	}
+	return 2;
+}

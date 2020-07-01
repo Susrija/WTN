@@ -1,0 +1,24 @@
+class UserMainCode
+{
+	public int createPIN(int input1,int  input2,int input3)
+	{
+		int unit1,unit2,unit3;
+		unit1=input1%10;
+		unit2=input2%10;
+		unit3=input3%10;
+		int ten1,ten2,ten3;
+		ten1=(input1/10)%10;
+		ten2=(input2/10)%10;
+		ten3=(input3/10)%10;
+		int hun1,hun2,hun3;
+		hun1=input1/100;
+		hun2=input2/100;
+		hun3=input3/100;
+		int unit=Math.min(unit1,Math.min(unit2,unit3));
+		int ten=Math.min(ten1,Math.min(ten2,ten3));
+		int hun=Math.min(hun1,Math.min(hun2,hun3));
+		int thu=Math.max(unit1,Math.max(unit2,Math.max(unit3,Math.max(ten1,Math.max(ten2,Math.max(ten3,Math.max(hun1,Math.max(hun1,Math.max		(hun2,hun3)))))))));
+		int pin=thu*1000+hun*100+ten*10+unit;
+		return pin;
+	}
+}
