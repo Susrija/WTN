@@ -1,0 +1,15 @@
+class UserMainCode
+{
+	public int allDigitsCount(int input1)
+	{
+		int count=0;
+		int i;
+		while(input1>0)
+		{
+			i=input1/10;
+			input1=i;
+			count++;
+		}		
+		return count;
+	}
+}

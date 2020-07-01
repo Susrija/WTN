@@ -1,0 +1,19 @@
+class UserMainCode
+{
+	int r,count=0;i;
+	int a[]=new int[10];
+	while(input1>0)
+	{
+		r=input1%10;
+		a[r]++;
+		input1=input/10;
+	}
+	for(i=0;i<10;i++)
+	{
+		if(a[i]>0)
+		{
+			count++;
+		}
+	}
+	return count;
+}

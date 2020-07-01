@@ -1,0 +1,26 @@
+class UserMainCode
+{
+	public int countPrimeInRange(int input1, int input2)
+	{
+		int l=input1,i,c=0;
+		int count=0;
+		while(l<=input2)
+		{
+			for(int i=2;i<l;i++)
+			{
+				if(l%i==0)
+				{
+					c++;
+				}
+			}
+			if(c==0)
+			{
+				count++;
+				System.out.println(l);
+			}
+			l++;
+			c=0;
+		}
+		return count;
+	}
+}
