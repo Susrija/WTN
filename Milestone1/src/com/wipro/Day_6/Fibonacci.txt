@@ -1,0 +1,15 @@
+public long nthFibonacci(int input)
+{
+	int a[]=new int[input+1];		
+	if(input1>0)
+	{
+		a[1]=1;
+		for(int i=2;i<=input1;i++)
+		{
+			a[i]=a[i-1]+a[i-2];
+		}
+		return a[input1-1];
+	}
+	else
+	throw new UnsupportedOperationException("nthFibonacci(int input1");
+}
