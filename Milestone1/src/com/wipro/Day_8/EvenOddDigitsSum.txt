@@ -1,0 +1,30 @@
+public int EvenOddDigitsSum(int input1,String input2)
+{
+int sum=0;
+	int r;
+	if(input2.equals("even"))
+	{
+		while(input1>0)
+		{
+			r=input1%10;
+			if(r%2==0)
+			{
+				sum=sum+r;
+			}
+			input1/=10;
+		}
+	}
+	else
+	{
+		while(input1>0)
+		{
+			r=input1%10;
+			if(r%2!=0)
+			{
+				sum=sum+r;
+			}
+			input1/=10;
+		}
+	}
+	return sum;
+}

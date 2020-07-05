@@ -1,0 +1,34 @@
+public int digitSum(int input1)
+{
+	int sum=0;
+		int r;
+		int input=Math.abs(input1);
+		while(input>0 || sum>9)
+		{
+			if(input<=0)
+			{
+				int sum1=sum;
+				sum=0;
+				while(sum1>0)
+				{
+					r=sum1%10;
+					sum=sum+r;
+					sum1/=10;
+				}
+			}
+			else
+			{
+				while(input>0)
+				{
+					r=input%10;
+					sum=sum+r;
+					input/=10;
+				}
+			}
+		}
+		if(input1<0)
+		return (~(sum-1));
+		else
+		return sum;
+	}
+}
