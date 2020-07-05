@@ -1,0 +1,5 @@
+public int lastDigitOf(int input1)
+{
+int n=input1%10;
+		return Math.abs(n);
+}
